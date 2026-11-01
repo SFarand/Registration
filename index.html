@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- بخش اول: فورم -->
+        <form id="infoForm" class="card">
+            <h2>Registration</h2>
+
+            <div class="row">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="color" id="nameColor" value="#00f5d4">
+            </div>
+
+            <div class="row">
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="color" id="lastNameColor" value="#f15bb5">
+            </div>
+
+            <div class="row">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="color" id="emailColor" value="#fee440">
+            </div>
+
+            <div class="row">
+                <input type="text" id="country" placeholder="Country" required>
+                <input type="color" id="countryColor" value="#9b5de5">
+            </div>
+
+            <div class="row">
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="color" id="ageColor" value="#00bbf9">
+            </div>
+
+            <div class="row">
+                <input type="text" id="education" placeholder="Education" required>
+                <input type="color" id="educationColor" value="#ff9e00">
+            </div>
+
+            <div class="row">
+                <input type="text" id="job" placeholder="Job" required>
+                <input type="color" id="jobColor" value="#80ed99">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- بخش دوم: نمایش معلومات -->
+        <div class="card result">
+            <h2>User Info</h2>
+            <p>Name: <span id="outName">-</span></p>
+            <p>Last name: <span id="outLastName">-</span></p>
+            <p>Email: <span id="outEmail">-</span></p>
+            <p>Country: <span id="outCountry">-</span></p>
+            <p>Age: <span id="outAge">-</span></p>
+            <p>Education: <span id="outEducation">-</span></p>
+            <p>Job: <span id="outJob">-</span></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
